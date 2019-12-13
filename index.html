@@ -1,0 +1,301 @@
+`<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+</head>
+<style>
+	body{
+		@font-face{
+			font-family: "Open Sans";
+			src: url("font/OpenSans-Regular-webfont.woff2") format("woff2"),
+       			url("font/OpenSans-Regular-webfont.woff") format("woff");
+		}
+	}
+
+	.header__img_bg{
+		position: absolute;
+		width: 1536px;
+		height: 753px;
+		left: 0px;
+		top: 0px;
+		border-radius: 10px;
+	}
+
+	.header__img_bg_gradient{
+		position: absolute;
+		width: 1536px;
+		height: 753px;
+		left: 0px;
+		top: 0px;
+		background: linear-gradient(180deg, rgba(45, 50, 79, 0.8) 0%, rgba(0, 147, 221, 0.72) 100%);
+		border: 1px solid rgba(255, 255, 255, 0.35);
+		box-sizing: border-box;
+	}
+
+	.header__elem_text_S10{
+		position: absolute;
+		left: 44%;
+		top: -237px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 144px;
+		line-height: 436px;
+		color: #F2F2F2;
+		text-shadow: 10px 24px 54px rgba(0, 0, 0, 0.45);
+	}
+
+
+	.nav__elem_img_doorkeeper{
+		position: absolute;
+		width: 280px;
+		height: 159.6px;
+		left: 42%;
+		top: 232px;
+	}
+
+	.nav__elem_text_title{
+		position: absolute;
+		left: 554px;
+		top: 358px;
+		font-family: Open Sans;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 42px;
+		text-transform: uppercase;
+		color: rgba(45, 50, 79, 0.4);
+		text-shadow: 0px 4px 64px rgba(0, 0, 0, 0.35);
+		white-space: nowrap;
+	}
+
+	.nav__elem_text_p_door{
+		position: absolute;
+		left: 45%;
+		top: 447px;
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: normal;
+		font-size: 19px;
+		text-transform: uppercase;
+		color: #F2F2F2;
+	}
+
+	.article__menu_1_bg{
+		position: absolute;
+		width: 227px;
+		height: 45px;
+		left: 30px;
+		top: 230px;
+		background: #2D324F;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 10px rgba(0, 147, 221, 0.45);
+		border-radius: 5px;
+	}
+
+	.article__menu_1_text{
+		position: absolute;
+		left: 46px;
+		top: 232px;
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #F2F2F2;
+	}
+
+	.article__menu_2_bg{
+		position: absolute;
+		width: 227px;
+		height: 45px;
+		left: 30px;
+		top: 300px;
+		background: #2D324F;
+		box-shadow: 0px 4px 10px rgba(0, 147, 221, 0.45);
+		border-radius: 5px;
+	}
+
+	.article__menu_2_text{
+		position: absolute;
+		left: 46px;
+		top: 300px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #F2F2F2;
+	}
+
+	.article__menu_3_bg{
+		position: absolute;
+		width: 227px;
+		height: 45px;
+		left: 30px;
+		top: 370px;
+		background: #2D324F;
+		box-shadow: 0px 4px 10px rgba(0, 147, 221, 0.45);
+		border-radius: 5px;
+	}
+
+	.article__menu_3_text{
+		position: absolute;
+		left: 46px;
+		top: 365px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #F2F2F2;
+	}
+
+	.article__menu_4_bg{
+		position: absolute;
+		width: 227px;
+		height: 45px;
+		left: 30px;
+		top: 430px;
+		background: #2D324F;
+		box-shadow: 0px 4px 10px rgba(0, 147, 221, 0.45);
+		border-radius: 5px;
+	}
+
+	.article__menu_4_text{
+		position: absolute;
+		left: 46px;
+		top: 425px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #F2F2F2;
+	}
+
+	.aside__elem_one_bg{
+		position: absolute;
+		width: 111px;
+		height: 66px;
+		right: 140px;
+		top: 200px;
+		background: #CDCBC7;
+		box-sizing: border-box;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+
+	.aside__elem_one_text{
+		position: absolute;
+		height: 17px;
+		right: 180px;
+		top: 234px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		text-shadow: 10px 24px 54px rgba(0, 0, 0, 0.45);
+	}
+
+	.aside__elem_one_bg_2{
+		position: absolute;
+		width: 111px;
+		height: 66px;
+		right: 90px;
+		top: 287px;
+		background: #0093DD;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+
+	.aside__elem_one_bg_3{
+		position: absolute;
+		width: 111px;
+		height: 66px;
+		right: 90px;
+		top: 372px;
+		background: #F3F2F2;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+
+	.aside__elem_one_bg_4{
+		position: absolute;
+		width: 111px;
+		height: 66px;
+		right: 90px;
+		top: 453px;
+		background: #E01E3C;
+		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
+		border-radius: 5px;
+	}
+</style>
+<body>
+	<header>
+		<div class="header">
+			<img class="header__img_bg" src="img/bg.png" alt="">
+			<div class="header__img_bg_gradient"></div>
+			<p class="header__elem_text_S10">S10</p>
+		</div>
+	<header>
+
+	<nav>
+		<div class="nav">
+			<img class="nav__elem_img_doorkeeper" src="img/doorkeepers10.png" alt="">
+			<p class="nav__elem_text_title">lets your guests in</p>
+			<p class="nav__elem_text_p_door">doorkeeper s10</p>
+		</div>
+	</nav>
+
+	<article>
+		<div class="article__menu">
+			<div class="article__menu_1">
+				<div class="article__menu_1_bg"></div>
+				<p class="article__menu_1_text">Overview</p>
+			</div>
+
+			<div class="article__menu_2">
+				<div class="article__menu_2_bg"></div>
+				<p class="article__menu_2_text">How its works</p>
+			</div>
+
+			<div class="article__menu_3">
+				<div class="article__menu_3_bg"></div>
+				<p class="article__menu_3_text">Technical data</p>
+			</div>
+
+			<div class="article__menu_4">
+				<div class="article__menu_4_bg"></div>
+				<p class="article__menu_4_text">Payments</p>
+			</div>
+		</div>
+	</article>
+
+	<aside>
+		<div class="aside">
+			<div class="aside__elem_one">
+				<div class="aside__elem_one_bg"></div>
+				<p class="aside__elem_one_text">Gold Metallic</p>
+			</div>
+
+			<div class="aside__elem_two">
+				<div class="aside__elem_one_bg_2"></div>
+			</div>
+
+			<div class="aside__elem_three">
+				<div class="aside__elem_one_bg_3"></div>
+			</div>
+
+			<div class="aside__elem_four">
+				<div class="aside__elem_one_bg_4"></div>
+			</div>
+		</div>
+	</aside>
+</body>
+</html>
