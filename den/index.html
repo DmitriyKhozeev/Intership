@@ -1,7 +1,14 @@
-body{
+`<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+</head>
+<style>
+	body{
 		@font-face{
-			font-family: Open Sans;
-			src: url("font/OpenSans-Regular-webfont.woff2") format("woff2");
+			font-family: "Open Sans";
+			src: url("font/OpenSans-Regular-webfont.woff2") format("woff2"),
+       			url("font/OpenSans-Regular-webfont.woff") format("woff");
 		}
 	}
 
@@ -39,7 +46,7 @@ body{
 	}
 
 
-	#nav__elem_img_doorkeeper{
+	.nav__elem_img_doorkeeper{
 		position: absolute;
 		width: 280px;
 		height: 159.6px;
@@ -85,7 +92,6 @@ body{
 		border-radius: 5px;
 		outline: none;
   		border: 0;
-  		cursor: pointer;
 	}
 
 	.article__menu_1_text{
@@ -99,7 +105,6 @@ body{
 		line-height: 20px;
 		text-transform: uppercase;
 		color: #F2F2F2;
-		cursor: pointer;
 	}
 
 	.article__menu_2_bg{
@@ -113,7 +118,6 @@ body{
 		border-radius: 5px;
 		outline: none;
   		border: 0;
-  		cursor: pointer;
 	}
 
 	.article__menu_2_text{
@@ -127,7 +131,6 @@ body{
 		line-height: 20px;
 		text-transform: uppercase;
 		color: #F2F2F2;
-		cursor: pointer;
 	}
 
 	.article__menu_3_bg{
@@ -141,7 +144,6 @@ body{
 		border-radius: 5px;
 		outline: none; 
   		border: 0;
-  		cursor: pointer;
   		
 	}
 
@@ -156,7 +158,6 @@ body{
 		line-height: 20px;
 		text-transform: uppercase;
 		color: #F2F2F2;
-		cursor: pointer;
 	}
 
 	.article__menu_4_bg{
@@ -170,7 +171,6 @@ body{
 		border-radius: 5px;
 		outline: none;
   		border: 0;
-  		cursor: pointer;
 
 	}
 
@@ -185,7 +185,6 @@ body{
 		line-height: 20px;
 		text-transform: uppercase;
 		color: #F2F2F2;
-		cursor: pointer;
 	}
 
 	.aside__elem_one_bg{
@@ -198,7 +197,6 @@ body{
 		box-sizing: border-box;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
-		cursor: pointer;
 	}
 
 	.aside__elem_one_text{
@@ -214,7 +212,7 @@ body{
 		text-shadow: 10px 24px 54px rgba(0, 0, 0, 0.45);
 	}
 
-	#aside__elem_one_bg_2{
+	.aside__elem_one_bg_2{
 		position: absolute;
 		width: 111px;
 		height: 66px;
@@ -223,10 +221,9 @@ body{
 		background: #0093DD;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
-		cursor: pointer;
 	}
 
-	#aside__elem_one_bg_3{
+	.aside__elem_one_bg_3{
 		position: absolute;
 		width: 111px;
 		height: 66px;
@@ -235,10 +232,9 @@ body{
 		background: #F3F2F2;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
-		cursor: pointer;
 	}
 
-	#aside__elem_one_bg_4{
+	.aside__elem_one_bg_4{
 		position: absolute;
 		width: 111px;
 		height: 66px;
@@ -247,7 +243,6 @@ body{
 		background: #E01E3C;
 		box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
-		cursor: pointer;
 	}
 
 	.footer__elem_text_Become{
@@ -309,7 +304,6 @@ body{
 		height: 41.31px;
 		left: 692.37px;
 		top: 650px;
-		cursor: pointer;
 	}
 
 	.footer__elem_photo_3{
@@ -318,7 +312,6 @@ body{
 		height: 41.31px;
 		left: 758.37px;
 		top: 650px;
-		cursor: pointer;
 	}
 
 	.footer__elem_photo_1_line{
@@ -367,7 +360,13 @@ body{
 		border-radius: 5px;
 		outline: none;
   		border: 0;
-  		font-family: Open Sans;
+	}
+
+	.footer__elem_button_text{
+		position: absolute;
+		left: 1340px;
+		top: 625px;
+		font-family: Open Sans;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 17px;
@@ -375,5 +374,95 @@ body{
 		text-transform: uppercase;
 		color: #FFFFFF;
 		text-shadow: 10px 24px 54px rgba(0, 0, 0, 0.45);
-		cursor: pointer;
+
 	}
+</style>
+<body>
+	<header>
+		<div class="header">
+			<img class="header__img_bg" src="img/bg.png" alt="">
+			<div class="header__img_bg_gradient"></div>
+			<p class="header__elem_text_S10">S10</p>
+		</div>
+	<header>
+
+	<nav>
+		<div class="nav">
+			<img class="nav__elem_img_doorkeeper" src="img/doorkeepers10.png" alt="">
+			<p class="nav__elem_text_title">lets your guests in</p>
+			<p class="nav__elem_text_p_door">doorkeeper s10</p>
+		</div>
+	</nav>
+
+	<article>
+		<div class="article__menu">
+			<div class="article__menu_1">
+				<button class="article__menu_1_bg"></button>>
+				<p class="article__menu_1_text">Overview</p>
+			</div>
+
+			<div class="article__menu_2">
+				<button class="article__menu_2_bg"></button>>
+				<p class="article__menu_2_text">How its works</p>
+			</div>
+
+			<div class="article__menu_3">
+				<button class="article__menu_3_bg"></button>
+				<p class="article__menu_3_text">Technical data</p>
+			</div>
+
+			<div class="article__menu_4">
+				<button class="article__menu_4_bg"></button>
+				<p class="article__menu_4_text">Payments</p>
+			</div>
+		</div>
+	</article>
+
+	<aside>
+		<div class="aside">
+			<div class="aside__elem_one">
+				<div class="aside__elem_one_bg"></div>
+				<p class="aside__elem_one_text">Gold Metallic</p>
+			</div>
+
+			<div class="aside__elem_two">
+				<div class="aside__elem_one_bg_2"></div>
+			</div>
+
+			<div class="aside__elem_three">
+				<div class="aside__elem_one_bg_3"></div>
+			</div>
+
+			<div class="aside__elem_four">
+				<div class="aside__elem_one_bg_4"></div>
+			</div>
+		</div>
+	</aside>
+	
+	<footer>
+		<div class="footer">
+			<div class="footer__elem_text">
+				<p class="footer__elem_text_Become">Become dealer</p>
+				<p class="footer__elem_text_linev1"></p>
+				<p class="footer__elem_text_Request">Request a test</p>
+				<p class="footer__elem_text_linev2"></p>
+			</div>
+
+			<div class="footer__elem_photo">
+				<img class="footer__elem_photo_1" src="img/nxt-222.png" alt ="">
+				<p class="footer__elem_photo_1_line"></p>
+				<img class="footer__elem_photo_2" src="img/nxt-200.png" alt ="">
+				<img class="footer__elem_photo_3" src="img/nxt-100.png" alt ="">
+				<img class="footer__elem_photo_4" src="img/nxt-100-1.png" alt ="">
+				<img class="footer__elem_photo_5" src="img/nxt-100-2.png" alt ="">
+				<img class="footer__elem_photo_6" src="img/nxt-5.png" alt ="">
+			</div>
+
+			<div class="footer__elem_button">
+				<button class="footer__elem_button_bg"></button>
+				<p class="footer__elem_button_text">Buy now</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
